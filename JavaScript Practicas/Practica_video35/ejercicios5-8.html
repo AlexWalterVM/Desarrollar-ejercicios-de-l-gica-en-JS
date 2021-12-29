@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios practicos #35</title>
+</head>
+<body>
+    <h1>Ejercicios practicos #35</h1>
+    <ul>
+        <li>Programa una función que invierta las palabras de una cadena de texto, pe. 
+            miFuncion("Hola Mundo") devolverá "odnuM aloH".</li>
+            <script>
+                /*const invertirCadena=(cadena="")=>
+                 (!cadena)
+                 ?console.warn("No ha ingresado nignun texto")
+                 :console.info(cadena.split("").reverse().join(""));
+                
+                invertirCadena();
+                invertirCadena("Hola Mundo");
+                invertirCadena("Java script es un lenguaje de programación increible");
+                invertirCadena("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 4 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum");
+                */
+            </script>
+            <br>
+
+        <li>Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. 
+            miFuncion("hola mundo adios mundo", "mundo") devolverá 2.</li>
+            <script>
+                /*const textoEnCadena=(cadena="", texto="")=>{
+                    if(!cadena)return console.warn("No ingresaste el texto largo")
+                    if(!texto)return console.warn("No ingresaste la palabra a evaluar")
+
+                     let i = 0
+                      contador= 0
+                     while(i!==-1){
+                         i= cadena.indexOf(texto, i);
+                         if(i!==-1){
+                             i++;
+                             contador++;
+                         }
+                     }
+
+                     return console.info(`La palabra ${texto} se repite ${contador} veces`);
+                }
+
+                textoEnCadena();
+                textoEnCadena("", "mundo");
+                textoEnCadena("Hola mundo adios mundo");
+                textoEnCadena("Hola mundo adios mundo", "mundo");*/
+            </script>
+            <br>
+
+        <li>Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. 
+            mifuncion("Salas") devolverá true.</li>
+            <script>
+                /*const palindromo=(palabra="")=>{
+                    if(!palabra)return console.warn("No ingresaste ninguna palabra");
+
+                    palabra = palabra.toLowerCase();
+                    let alrevez = palabra.split("").reverse().join("");
+
+                    return (palabra===alrevez)
+                     ?console.info(`Si es palindromo, palabra original ${palabra} Palabra al revez ${alrevez}`)
+                     :console.info(`No es palidromo, palabra original ${palabra} Palabra al revez ${alrevez}`);
+                }
+                palindromo("");
+                palindromo("Hola Mundo");
+                palindromo("Salas");*/
+            </script>
+            <br>
+            
+        <li>Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. 
+            miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.</li>
+            <script>
+                /*const eliminarCaracteres=(texto="", patron="")=>
+                 (!texto)
+                  ?console.warn("No ingresaste un texto")
+                  :(!patron)
+                   ?console.warn("No ingresaste un patron de caracteres")
+                   :console.info(texto.replace(new RegExp(patron,"ig"),""));
+                eliminarCaracteres();
+                eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5");
+                eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");*/
+            </script>
+    </ul>
+    
+</body>
+</html>

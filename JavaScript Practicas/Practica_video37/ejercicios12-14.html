@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios practicos #37</title>
+</head>
+<body>
+    <h1>Ejercicios practicos #37</h1>
+    <ul>
+        <li> Programa una función que determine si un número es primo 
+        (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true.</li>
+        <script>
+            /*const numPirmo=(numero=undefined)=>{
+                if(numero===undefined)return console.warn("No ingresaste un valor correcto");
+                
+                if(typeof numero!=="number")return console.error(`El valor ${numero} ingresado, NO es un número`);
+                
+                if(numero===0) return console.error("el numero no puede ser 0");
+                if(numero===1) return console.error("el numero no puede ser 1");
+                if(Math.sign(numero)===-1) return console.error("El numero no puede ser negativo");
+
+                let divisible= false;
+
+                for(i=2; i<numero; i++){
+                    if((numero%i)===0){
+                        divisible= true;
+                        break
+                    }
+                }
+
+                return(divisible)
+                ?console.log(`El número ${numero} NO es primo`)
+                :console.log(`El número ${numero} SI es primo`);
+            }
+            numPirmo();
+            numPirmo("5");
+            numPirmo([1,2,3]);
+            numPirmo(0);
+            numPirmo(-5);
+            numPirmo(5);
+            numPirmo(8);*/
+        </script>
+        <br>
+
+
+        <li>Programa una función que determine si un número es par o impar, pe. 
+        miFuncion(29) devolverá Impar.</li>
+        <script>
+            /*const numParImpar=(numero=undefined)=>{
+                if(numero===undefined)return console.warn("No ingresaste un valor correcto");
+                
+                if(typeof numero!=="number")return console.error(`El valor ${numero} ingresado, NO es un número`);
+
+                return((numero%2)==0)
+                ?console.log(`El número ${numero} SI ES PAR`)
+                :console.log(`El número ${numero} NO ES PAR`);
+            }
+            numParImpar();
+            numParImpar("5");
+            numParImpar(0);
+            numParImpar(-5);
+            numParImpar(5);
+            numParImpar(8);
+            numParImpar(-8);*/
+        </script>
+        <br>
+
+
+        <li>Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. 
+        miFuncion(0,"C") devolverá 32°F.</li>
+        <script>
+            /*const convertirgrados=(grados=undefined, unidad=undefined)=>{
+                if(grados===undefined)return console.warn("No ingresaste los grados a convertir");
+                if(typeof grados!=="number")return console.error(`El valor ${grados} ingresado, NO es un número`);
+
+                if(unidad===undefined)return console.warn("No ingresaste el tipo grado a convertir");
+                if(typeof unidad!=="string")return console.error(`El caracter ${unidad} ingresado, NO es una cadena de texto`);
+                
+                if(unidad.length!==1||!/(C|F)/.test(unidad)); return console.warn("Valor de Unidad no reconocido");
+                
+                if(unidad==="C"){
+                    return console.info(`${grados}°C= ${Math.round((grados*(9/5))+32)}°F`);
+                }else if(unidad=="F"){
+                    return console.info(`${grados}°F= ${Math.round(((grados-32)*(5/9)))}°C`);
+                }else{
+                    return console.error("El tipo de grado a convertir no es valido");
+                }
+            }
+            convertirgrados();
+            convertirgrados("5");
+            convertirgrados(2);
+            convertirgrados(2, true);
+            convertirgrados(2, "Hola");
+            convertirgrados(2, "E");
+            convertirgrados(0, "C");
+            convertirgrados(100, "C");
+            convertirgrados(2, "F");*/
+        </script>
+    </ul>
+</body>
+</html>
